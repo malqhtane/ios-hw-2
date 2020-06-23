@@ -132,6 +132,11 @@ class ViewController: UIViewController {
     
 // Bonus
 func enryptWith(emoji : Bool , array : [String] ) -> String {
+    if emoji{
     return secretNameEmoji(array: array)
+}
+    else{
+        return secretNameLetter(members: array)
+    }
 }
 }
